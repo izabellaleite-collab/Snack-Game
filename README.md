@@ -6,7 +6,8 @@ Desenvolvido com foco no aprendizado e na prática de vetores, funções, estrut
 
 ---
 
-<img width="827" height="633" alt="image" src="https://github.com/user-attachments/assets/8383e8eb-81aa-4c0f-8229-1039b138fefb" />
+<img width="714" height="585" alt="{A0049FDD-4198-42AF-AF94-CF37C088D7B4}" src="https://github.com/user-attachments/assets/1b787a74-7f0d-4e46-aa28-4ca38260f45d" />
+
 
 ---
 ## Funcionalidades
