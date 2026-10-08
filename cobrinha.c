@@ -1,12 +1,3 @@
-/*
-    JOGO DA COBRINHA
-
-    Controles: W = cima, S = baixo, A = esquerda, D = direita
-               X = sair do jogo
-
-    Feito para Windows (usa conio.h e windows.h)
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -17,14 +8,12 @@
 #define ALTURA 15
 #define TAM_MAX 100
 
-/* a posicao 0 dos vetores e a cabeca da cobra */
 int cobraX[TAM_MAX];
 int cobraY[TAM_MAX];
 int tamanho;
 
 int comidaX, comidaY;
 
-/* 1 = cima, 2 = baixo, 3 = esquerda, 4 = direita */
 int direcao;
 
 int pontos;
@@ -165,7 +154,7 @@ void moverCobra()
         cobraY[i] = cobraY[i - 1];
     }
 
-    /* agora anda com a cabeca */
+ 
     if (direcao == 1) {
         cobraY[0] = cobraY[0] - 1;
     }
@@ -179,12 +168,12 @@ void moverCobra()
         cobraX[0] = cobraX[0] + 1;
     }
 
-    /* bateu na parede? */
+    
     if (cobraX[0] < 0 || cobraX[0] >= LARGURA || cobraY[0] < 0 || cobraY[0] >= ALTURA) {
         fimDeJogo = 1;
     }
 
-    /* bateu no proprio corpo? */
+   
     for (i = 1; i < tamanho; i++) {
         if (cobraX[0] == cobraX[i] && cobraY[0] == cobraY[i]) {
             fimDeJogo = 1;
